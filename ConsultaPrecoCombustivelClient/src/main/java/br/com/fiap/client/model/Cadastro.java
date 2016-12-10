@@ -10,6 +10,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Cadastro implements Serializable {
 	
+	private Long id;
 	private String combustivel;
 	private Double valor;
 	private String nomePosto;
@@ -45,6 +46,12 @@ public class Cadastro implements Serializable {
 	}
 	public void setLongitude(long longitude) {
 		this.longitude = longitude;
+	}
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
 	}
 }
 
